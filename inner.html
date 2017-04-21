@@ -1,0 +1,269 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+    <meta name="renderer" content="webkit">
+    <title>黄金宝盒惊喜不断  最高送2888彩金</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet" type="text/css" />
+    <link href="css/style-in.css" rel="stylesheet" type="text/css" media="all" />
+    <!-- jQuery -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        //獎金滚动要放在head 否則失效
+        function marquee(i, direction) {
+            var obj = document.getElementById("marquee" + i);
+            var obj1 = document.getElementById("marquee" + i + "_1");
+            var obj2 = document.getElementById("marquee" + i + "_2");
+            if (direction == "up") {
+                if (obj2.offsetTop - obj.scrollTop <= 0) {
+                    obj.scrollTop -= (obj1.offsetHeight + 20);
+                } else {
+                    var tmp = obj.scrollTop;
+                    obj.scrollTop++;
+                    if (obj.scrollTop == tmp) {
+                        obj.scrollTop = 1;
+                    }
+                }
+            } else {
+                if (obj2.offsetWidth - obj.scrollLeft <= 0) {
+                    obj.scrollLeft -= obj1.offsetWidth;
+                } else {
+                    obj.scrollLeft++;
+                }
+            }
+        }
+
+        function marqueeStart(i, direction) {
+            var obj = document.getElementById("marquee" + i);
+            var obj1 = document.getElementById("marquee" + i + "_1");
+            var obj2 = document.getElementById("marquee" + i + "_2");
+
+            obj2.innerHTML = obj1.innerHTML;
+            var marqueeVar = window.setInterval("marquee(" + i + ", '" + direction + "')", 20);
+            obj.onmouseover = function() {
+                window.clearInterval(marqueeVar);
+            }
+            obj.onmouseout = function() {
+                marqueeVar = window.setInterval("marquee(" + i + ", '" + direction + "')", 20);
+            }
+        }
+    </script>
+</head>
+<body>
+<!--banner-->
+<section class="section-wrap">
+    <!--好運降臨-->
+    <!--<div class="section section-1" style="display: none;">-->
+        <!--<div class="container">-->
+            <!--<div class="row txt-center">-->
+                <!--&lt;!&ndash;logo&ndash;&gt;-->
+                <!--<div class="col-md-12">-->
+                    <!--<a href="#">-->
+                        <!--<img src="http://bkk818.info/caishenCome/images/logo.png" alt="">-->
+                    <!--</a>-->
+                <!--</div>-->
+                <!--&lt;!&ndash;banner&ndash;&gt;-->
+                <!--<div class="col-md-12 mg-top">-->
+                    <!--<img src="http://bkk818.info/caishenCome/images/banner-main.png" alt="">-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+    <!--抽红包-->
+    <div class="section section-1 game open-body">
+        <div class="g-bg">
+            <div class="bg1"></div>
+            <div class="bg2"></div>
+            <div class="bg3"></div>
+            <div class="bg4"></div>
+        </div>
+        <div class="container">
+        <div class="row txt-center">
+        <!--logo-->
+        <div class="col-md-12 mg-top2">
+            <a href="index.html">
+                <img src="images/tigerfa_logo.png" alt="">
+            </a>
+        </div>
+        <div class="wrapper">
+            <div class="open-has ">
+                <h3 class="title-close">敬爱的<span class="user">aaa</span>贵宾您好：<br>
+                    恭喜您还有<span class="user">0</span>次抽奖机会！
+                </h3>
+                <div class="mod-chest">
+                    <div class="chest-close show">
+                        <!--點擊抽紅包-->
+                        <div style="width: 100%;">
+                        <div class="redbag-wrap">
+                            <div class="btn2">
+                                <img class="tada animated infinite" src="images/gold_open.gif" alt="goldbox" style="width: 60%;">
+                                <a href="#">开始抽奖</a>
+                            </div>
+                            <div class="redbag duilian_left"  style="display: none;">
+                                <div class="duilian_con">
+                                    <div class="duilian_close"></div>
+                                    <div class="redbag-num"></div>
+                                   <img src="images/gift.png" alt="" style="width:60%;"/>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+    </div>
+    <!--得奖名单-->
+    <div class="section section-2">
+        <div class="g-bg2"></div>
+        <div class="content">
+            <div class="title">
+                <p class="tit">得奖名单</p>
+            </div>
+            <div class="table table-head">
+                <div class="row-head-colspan">得奖名单</div>
+                <div class="row-head">
+                    <div class="cell1-head">会员帐号</div>
+                    <div class="cell2-head">红包</div>
+                </div>
+                <div id="marquee2" class="marqueetop">
+                    <div style="height: 400px;">
+                        <ul id="marquee2_1">
+                            <li>
+                                <div class="row">
+                                    <div class="txt">yo**555</div><div class="txt">188</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="row">
+                                    <div class="txt">yo**555</div><div class="txt">188</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="row">
+                                    <div class="txt">yo**555</div><div class="txt">188</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="row">
+                                    <div class="txt">yo**555</div><div class="txt">188</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="row">
+                                    <div class="txt">yo**555</div><div class="txt">188</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="row">
+                                    <div class="txt">yo**555</div><div class="txt">188</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="row">
+                                    <div class="txt">yo**555</div><div class="txt">188</div>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul id="marquee2_2"></ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<ul class="section-btn">
+    <!--<div class="on">好運降臨</div>-->
+    <li class="on">宝盒抽奖</li>
+    <li>得獎名單</li>
+</ul>
+<div class="arrow">&laquo;</div>
+<script type="text/javascript">
+    //此处引用：鼠标滚轮mousewheel插件
+    !function(a){"function"==typeof define&&define.amd?define(["jquery"],a):"object"==typeof exports?module.exports=a:a(jQuery)}(function(a){function b(b){var g=b||window.event,h=i.call(arguments,1),j=0,l=0,m=0,n=0,o=0,p=0;if(b=a.event.fix(g),b.type="mousewheel","detail"in g&&(m=-1*g.detail),"wheelDelta"in g&&(m=g.wheelDelta),"wheelDeltaY"in g&&(m=g.wheelDeltaY),"wheelDeltaX"in g&&(l=-1*g.wheelDeltaX),"axis"in g&&g.axis===g.HORIZONTAL_AXIS&&(l=-1*m,m=0),j=0===m?l:m,"deltaY"in g&&(m=-1*g.deltaY,j=m),"deltaX"in g&&(l=g.deltaX,0===m&&(j=-1*l)),0!==m||0!==l){if(1===g.deltaMode){var q=a.data(this,"mousewheel-line-height");j*=q,m*=q,l*=q}else if(2===g.deltaMode){var r=a.data(this,"mousewheel-page-height");j*=r,m*=r,l*=r}if(n=Math.max(Math.abs(m),Math.abs(l)),(!f||f>n)&&(f=n,d(g,n)&&(f/=40)),d(g,n)&&(j/=40,l/=40,m/=40),j=Math[j>=1?"floor":"ceil"](j/f),l=Math[l>=1?"floor":"ceil"](l/f),m=Math[m>=1?"floor":"ceil"](m/f),k.settings.normalizeOffset&&this.getBoundingClientRect){var s=this.getBoundingClientRect();o=b.clientX-s.left,p=b.clientY-s.top}return b.deltaX=l,b.deltaY=m,b.deltaFactor=f,b.offsetX=o,b.offsetY=p,b.deltaMode=0,h.unshift(b,j,l,m),e&&clearTimeout(e),e=setTimeout(c,200),(a.event.dispatch||a.event.handle).apply(this,h)}}function c(){f=null}function d(a,b){return k.settings.adjustOldDeltas&&"mousewheel"===a.type&&b%120===0}var e,f,g=["wheel","mousewheel","DOMMouseScroll","MozMousePixelScroll"],h="onwheel"in document||document.documentMode>=9?["wheel"]:["mousewheel","DomMouseScroll","MozMousePixelScroll"],i=Array.prototype.slice;if(a.event.fixHooks)for(var j=g.length;j;)a.event.fixHooks[g[--j]]=a.event.mouseHooks;var k=a.event.special.mousewheel={version:"3.1.12",setup:function(){if(this.addEventListener)for(var c=h.length;c;)this.addEventListener(h[--c],b,!1);else this.onmousewheel=b;a.data(this,"mousewheel-line-height",k.getLineHeight(this)),a.data(this,"mousewheel-page-height",k.getPageHeight(this))},teardown:function(){if(this.removeEventListener)for(var c=h.length;c;)this.removeEventListener(h[--c],b,!1);else this.onmousewheel=null;a.removeData(this,"mousewheel-line-height"),a.removeData(this,"mousewheel-page-height")},getLineHeight:function(b){var c=a(b),d=c["offsetParent"in a.fn?"offsetParent":"parent"]();return d.length||(d=a("body")),parseInt(d.css("fontSize"),10)||parseInt(c.css("fontSize"),10)||16},getPageHeight:function(b){return a(b).height()},settings:{adjustOldDeltas:!0,normalizeOffset:!0}};a.fn.extend({mousewheel:function(a){return a?this.bind("mousewheel",a):this.trigger("mousewheel")},unmousewheel:function(a){return this.unbind("mousewheel",a)}})});
+
+    $(function(){
+        //<!-- 抽紅包按鈕 -->
+        $(".btn2").click(function () {
+            var index = Math.floor(Math.random()*1);
+            var num = [
+                '188',
+                '588'
+            ];
+            var a =num[index];
+            $(".redbag-num").html(a); //紅包數字
+            $(".redbag").show();//紅包圖片
+            $(".btn2").hide();//抽完後立即關閉按鈕
+        });
+        <!-- 紅包圖片可關閉 -->
+        var duilian_close = $(".duilian_close");
+        duilian_close.click(function(){
+            $(this).parent().hide();
+            return false;
+        });
+
+        /*页面滑动初始化*/
+        var i=0;
+        var $btn = $('.section-btn li'),
+            $wrap = $('.section-wrap'),
+            $arrow = $('.arrow');
+
+        /*当前页面赋值*/
+        function up(){i++;if(i==$btn.length){i=0};}
+        function down(){i--;if(i<0){i=$btn.length-1};}
+
+        /*页面滑动*/
+        function run(){
+            $btn.eq(i).addClass('on').siblings().removeClass('on');
+            $wrap.attr("class","section-wrap").addClass(function() { return "put-section-"+i; }).find('.section').eq(i).find('.title').addClass('active');
+        };
+
+        /*右侧按钮点击*/
+        $btn.each(function(index) {
+            $(this).click(function(){
+                i=index;
+                run();
+            })
+        });
+
+        /*翻页按钮点击*/
+        $arrow.one('click',go);
+        function go(){
+            up();run();
+            setTimeout(function(){$arrow.one('click',go)},1000)
+        };
+
+        /*响应鼠标*/
+        $wrap.one('mousewheel',mouse_);
+        function mouse_(event){
+            if(event.deltaY<0) {up()}
+            else{down()}
+            run();
+            setTimeout(function(){$wrap.one('mousewheel',mouse_)},1000)
+        };
+
+        /*响应键盘上下键*/
+        $(document).one('keydown',k);
+        function k(event){
+            var e=event||window.event;
+            var key=e.keyCode||e.which||e.charCode;
+            switch(key)	{
+                case 38: down();run();
+                    break;
+                case 40: up();run();
+                    break;
+            };
+            setTimeout(function(){$(document).one('keydown',k)},1000);
+        }
+    });
+</script>
+<script type="text/javascript">marqueeStart(2, "up");</script>
+</body>
+</html>

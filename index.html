@@ -1,0 +1,462 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+	<meta name="renderer" content="webkit">
+	<title>黄金宝盒惊喜不断  最高送2888彩金</title>
+	<link href="css/animate.css" rel="stylesheet">
+     <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css?0420" rel="stylesheet"/>
+	<link href="css/style-s.css?0420" rel="stylesheet"/>
+
+	<!-- jQuery -->
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<!-- Bootstrap Core JavaScript -->
+	<script src="js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+        //獎金滚动 要放在head 否則失效
+        function marquee(i, direction) {
+            var obj = document.getElementById("marquee" + i);
+            var obj1 = document.getElementById("marquee" + i + "_1");
+            var obj2 = document.getElementById("marquee" + i + "_2");
+            if (direction == "up") {
+                if (obj2.offsetTop - obj.scrollTop <= 0) {
+                    obj.scrollTop -= (obj1.offsetHeight + 20);
+                } else {
+                    var tmp = obj.scrollTop;
+                    obj.scrollTop++;
+                    if (obj.scrollTop == tmp) {
+                        obj.scrollTop = 1;
+                    }
+                }
+            } else {
+                if (obj2.offsetWidth - obj.scrollLeft <= 0) {
+                    obj.scrollLeft -= obj1.offsetWidth;
+                } else {
+                    obj.scrollLeft++;
+                }
+            }
+        }
+
+        function marqueeStart(i, direction) {
+            var obj = document.getElementById("marquee" + i);
+            var obj1 = document.getElementById("marquee" + i + "_1");
+            var obj2 = document.getElementById("marquee" + i + "_2");
+
+            obj2.innerHTML = obj1.innerHTML;
+            var marqueeVar = window.setInterval("marquee(" + i + ", '" + direction + "')", 20);
+            obj.onmouseover = function() {
+                window.clearInterval(marqueeVar);
+            }
+            obj.onmouseout = function() {
+                marqueeVar = window.setInterval("marquee(" + i + ", '" + direction + "')", 20);
+            }
+        }
+	</script>
+	<style>
+		/*首頁
+        ==============*/
+		.g-bg {
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+		}
+		.g-bg2{
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			background: url(images/in_bg2.jpg) no-repeat center top;
+			height: 100%;
+			z-index: -1;
+		}
+		.g-bg3{
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			background: url(images/in_bg3.jpg) no-repeat center top;
+			height: 100%;
+			z-index: -1;
+		}
+		.g-bg4{
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			background: url(images/in_bg4.jpg?0420) no-repeat center top;
+			height: 100%;
+			z-index: -1;  
+		}
+
+		.txt-center{
+			text-align: center;
+		}
+		.mg-top2{
+			margin-top: 3%;
+		}
+		.mg-top2 img{
+			width: 24%;
+		}
+		.mg-top img{
+			display: block;
+			margin: auto;
+		}
+
+		/*参加宝箱活动
+        ==============*/
+		.login-block p{
+			padding: 3%;
+			color: white;
+			font-family:"Microsoft YaHei";
+			font-size: 24px;
+			letter-spacing: 3px;
+			text-align: center;
+		}
+		.input-account {
+			width: 44%;
+			margin: 5% auto;
+			text-align: center;
+		}
+		.submit-btn {
+			margin-bottom: 12px;
+			width: 100%;
+			line-height: 46px;
+			letter-spacing: 30px;
+			color: #fff;
+			text-align: center;
+			font-size: 24px;
+			cursor: pointer;
+			border: 2px solid #ffd68c;
+			border-top-right-radius: 2em;
+			border-top-left-radius: 2em;
+			border-bottom-left-radius: 2em;
+			border-bottom-right-radius: 2em;
+			background: #ffcc00; /* Old browsers */
+			background: -moz-linear-gradient(top, #ffcc00 0%, #ffb400 100%); /* FF3.6-15 */
+			background: -webkit-linear-gradient(top, #ffcc00 0%,#ffb400 100%); /* Chrome10-25,Safari5.1-6 */
+			background: linear-gradient(to bottom, #ffcc00 0%,#ffb400 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffcc00', endColorstr='#ffb400',GradientType=0 ); /* IE6-9 */
+		}
+		.submit-btn:hover{
+			color: #333;
+			background-color: yellow;
+		}
+		.submit-btn:active{
+			color: #333;
+			background-color: yellow;
+		}
+		/*得獎名單
+        ==============*/
+		.table {
+			display: table;
+			border-collapse: collapse;
+			border-radius: 10px 10px 10px 10px;
+			margin-bottom: 0;
+		}
+		.marqueetop li{
+			position: static;
+			top: 0px;
+			left: 0px;
+			z-index: 78;
+			display: block;
+			background-color: rgba(255,255,255,.9);
+			text-align: center;
+			padding: 5px;
+			color: #555;
+			border-bottom: rgba(255,255,255,.1) 1px solid;
+		}
+		.marqueetop li .txt{
+			display: table-cell;
+			max-width: 50%;
+			width: 420px;
+		}
+		.row-head {
+			display: table-caption;
+			background-color: rgba(73, 41, 29, 0.8);
+			text-align: center;
+			color: #ffffff;
+			border-top: rgba(255,255,255,.1) 1px solid;
+			text-align: center;
+			font-size: 15px;
+		}
+		.cell1-head {
+			width: 49%;
+			padding: 1em;
+			text-align: center;
+			display: inline-block;
+		}
+		.cell2-head {
+			width: 49%;
+			padding: 1em;
+			text-align: center;
+			display: inline-block;
+		}
+		/*活動詳情
+        ==============*/
+
+		.rule-wrap p{
+			font-size: 20px;
+			color: #ffca6f;
+			background: #39241a;
+			line-height: 35px;
+			width: 120px;
+			border-radius: 20px 20px 20px 20px;
+			text-align: center;
+		}
+		.rule-wrap ul li{
+			font-size: 15px;
+			color: #fff;
+			padding: 5px 0;
+		}
+
+		footer{
+			position: absolute;
+			bottom: 0;
+			background-color: black;
+			color: white;
+			width: 100%;
+			text-align: center;
+			padding: 1em;
+		}
+	</style>
+</head>
+<body>
+	<section class="section-wrap">
+		<!--首頁-->
+		<div class="section section-1">
+			<div class="g-bg">
+				<div class="bg1"></div>
+				<div class="bg2"></div>
+				<div class="bg3"></div>
+				<div class="bg4"></div>
+			</div>
+        	<div class="container">
+            	<div class="row txt-center">
+					<!--logo-->
+                	<div class="col-md-12 mg-top2">
+						<a href="#">
+							<img src="images/tigerfa_logo.png" alt="">
+						</a>
+					</div>
+					<!--banner-->
+
+					<div class="col-md-12 mg-top">
+						<img class="animated pulse infinite" src="images/obj_h1.png" alt="" style="animation-duration: 2s; width: 100%; max-width: 755px;">
+					</div>
+                </div>
+            </div>
+		</div>
+		<!--参加宝箱活动-->
+		<div class="section section-2">
+			<div class="g-bg2"></div>
+			<div class="content">
+				<div class="title">
+					<p class="tit">1.前往寻宝</p>
+				</div>
+				<div class="login-block">
+					<form name="form1" id="form1" method="post" autocomplete="off" action="inner.html">
+						<p>请输入您的会员帐号</p>
+						<div class="form-group input-account">
+							<input name="username" type="text" placeholder="请输入您的会员帐号" size="25" class="form-control ">
+						</div>
+						<div class="input-account">
+							<input class="submit-btn" type="submit">
+						</div>
+
+					</form>
+				</div>
+			</div>
+		</div>
+		</div>
+		<!--得奖名单-->
+		<div class="section section-3">
+			<div class="g-bg3"></div>
+			<div class="content">
+				<div class="title">
+					<p class="tit">2.得奖名单</p>
+				</div>
+				<div class="table table-head">
+					<div class="row-head-colspan">得奖名单</div>
+					<div class="row-head">
+						<div class="cell1-head">会员帐号</div>
+						<div class="cell2-head">红包</div>
+					</div>
+					<div id="marquee2" class="marqueetop">
+						<div style="height: 400px;">
+							<ul id="marquee2_1">
+								<li>
+									<div class="row">
+										<div class="txt">yo**555</div><div class="txt">188</div>
+									</div>
+								</li>
+								<li>
+									<div class="row">
+										<div class="txt">yo**555</div><div class="txt">188</div>
+									</div>
+								</li>
+								<li>
+									<div class="row">
+										<div class="txt">yo**555</div><div class="txt">188</div>
+									</div>
+								</li>
+								<li>
+									<div class="row">
+										<div class="txt">yo**555</div><div class="txt">188</div>
+									</div>
+								</li>
+								<li>
+									<div class="row">
+										<div class="txt">yo**555</div><div class="txt">188</div>
+									</div>
+								</li>
+								<li>
+									<div class="row">
+										<div class="txt">yo**555</div><div class="txt">188</div>
+									</div>
+								</li>
+								<li>
+									<div class="row">
+										<div class="txt">yo**555</div><div class="txt">188</div>
+									</div>
+								</li>
+							</ul>
+							<ul id="marquee2_2"></ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--活動詳情-->
+		<div class="section section-4">
+			<div class="g-bg4"></div>
+			<div class="title">
+				<p class="tit">3.活动详情</p>
+			</div>
+			<div class="rule-wrap">
+				<div class="rule-table">
+					<p>活动时间</p>
+					<ul>
+						<li>2017年5月1日00:00到2017年6月30日23:59止</li>
+					</ul>
+					<div class="padd"></div>
+					<p>活动对象</p>
+					<ul>
+						<li>老虎城娱乐会员</li>
+					</ul>
+					<div class="padd"></div>
+					<p>活动内容</p>
+					<ul>
+						<li>每日总存款达指定标准即可开启黄金宝盒！最高送2888彩金，1倍流水即可出款！</li>
+					</ul>
+					<div class="table" style="text-align: center;">
+						<table class="table table-striped">
+							<tr style="background-color: #ffcc00; font-size: 16px;text-align: center;">
+								<th style="text-align: center;">当日总存款</th>
+								<th style="text-align: center;">宝箱内容</th>
+							</tr>
+							<tr>
+								<td>100-999</td>
+								<td>8-88彩金</td>
+							</tr>
+							<tr>
+								<td>1,000-4,999</td>
+								<td>38-1888彩金</td>
+							</tr>
+							<tr>
+								<td>5,000+</td>
+								<td>88-2888彩金</td>
+							</tr>
+						</table>
+					</div>
+					<div class="padd"></div>
+					<p>活动规则</p>
+					<ul>
+						<li>1.每人每天限抽奖一次。</li>
+						<li>2.存款累计区间：当日00:00-23:59会员总存款</li>
+						<li>3.抽奖时间：将于隔日早上10点前派发，并且寄站内信通知会员</li>
+						<li>4.抽奖次数需于当日00:00-23:59使用完毕，逾时将自动取消。</li>
+					</ul>
+
+				</div>
+			</div>
+			<footer>
+				<p>客服专线：13142853024〡客服QQ：2070980571〡信箱：2070980571@qq.com</p>
+				<p>COPYRIGHT © 版权所有老虎城  RESERVED</p>
+			</footer>
+		</div>
+	</section>
+	<!--section選單-->
+	<ul class="section-btn">
+	  <li class="on">首頁</li>
+	  <li>前往寻宝</li>
+	  <li>得奖名单</li>
+	  <li>活动详情</li>
+	</ul>
+	<div class="arrow">&laquo;</div>
+<script type="text/javascript">
+	//此处引用：鼠标滚轮mousewheel插件
+	!function(a){"function"==typeof define&&define.amd?define(["jquery"],a):"object"==typeof exports?module.exports=a:a(jQuery)}(function(a){function b(b){var g=b||window.event,h=i.call(arguments,1),j=0,l=0,m=0,n=0,o=0,p=0;if(b=a.event.fix(g),b.type="mousewheel","detail"in g&&(m=-1*g.detail),"wheelDelta"in g&&(m=g.wheelDelta),"wheelDeltaY"in g&&(m=g.wheelDeltaY),"wheelDeltaX"in g&&(l=-1*g.wheelDeltaX),"axis"in g&&g.axis===g.HORIZONTAL_AXIS&&(l=-1*m,m=0),j=0===m?l:m,"deltaY"in g&&(m=-1*g.deltaY,j=m),"deltaX"in g&&(l=g.deltaX,0===m&&(j=-1*l)),0!==m||0!==l){if(1===g.deltaMode){var q=a.data(this,"mousewheel-line-height");j*=q,m*=q,l*=q}else if(2===g.deltaMode){var r=a.data(this,"mousewheel-page-height");j*=r,m*=r,l*=r}if(n=Math.max(Math.abs(m),Math.abs(l)),(!f||f>n)&&(f=n,d(g,n)&&(f/=40)),d(g,n)&&(j/=40,l/=40,m/=40),j=Math[j>=1?"floor":"ceil"](j/f),l=Math[l>=1?"floor":"ceil"](l/f),m=Math[m>=1?"floor":"ceil"](m/f),k.settings.normalizeOffset&&this.getBoundingClientRect){var s=this.getBoundingClientRect();o=b.clientX-s.left,p=b.clientY-s.top}return b.deltaX=l,b.deltaY=m,b.deltaFactor=f,b.offsetX=o,b.offsetY=p,b.deltaMode=0,h.unshift(b,j,l,m),e&&clearTimeout(e),e=setTimeout(c,200),(a.event.dispatch||a.event.handle).apply(this,h)}}function c(){f=null}function d(a,b){return k.settings.adjustOldDeltas&&"mousewheel"===a.type&&b%120===0}var e,f,g=["wheel","mousewheel","DOMMouseScroll","MozMousePixelScroll"],h="onwheel"in document||document.documentMode>=9?["wheel"]:["mousewheel","DomMouseScroll","MozMousePixelScroll"],i=Array.prototype.slice;if(a.event.fixHooks)for(var j=g.length;j;)a.event.fixHooks[g[--j]]=a.event.mouseHooks;var k=a.event.special.mousewheel={version:"3.1.12",setup:function(){if(this.addEventListener)for(var c=h.length;c;)this.addEventListener(h[--c],b,!1);else this.onmousewheel=b;a.data(this,"mousewheel-line-height",k.getLineHeight(this)),a.data(this,"mousewheel-page-height",k.getPageHeight(this))},teardown:function(){if(this.removeEventListener)for(var c=h.length;c;)this.removeEventListener(h[--c],b,!1);else this.onmousewheel=null;a.removeData(this,"mousewheel-line-height"),a.removeData(this,"mousewheel-page-height")},getLineHeight:function(b){var c=a(b),d=c["offsetParent"in a.fn?"offsetParent":"parent"]();return d.length||(d=a("body")),parseInt(d.css("fontSize"),10)||parseInt(c.css("fontSize"),10)||16},getPageHeight:function(b){return a(b).height()},settings:{adjustOldDeltas:!0,normalizeOffset:!0}};a.fn.extend({mousewheel:function(a){return a?this.bind("mousewheel",a):this.trigger("mousewheel")},unmousewheel:function(a){return this.unbind("mousewheel",a)}})});
+	
+	$(function(){
+		var i=0;
+		var $btn = $('.section-btn li'),
+			$wrap = $('.section-wrap'),
+			$arrow = $('.arrow');
+		
+		/*当前页面赋值*/
+		function up(){i++;if(i==$btn.length){i=0};}
+		function down(){i--;if(i<0){i=$btn.length-1};}
+		
+		/*页面滑动*/
+		function run(){
+			$btn.eq(i).addClass('on').siblings().removeClass('on');	
+			$wrap.attr("class","section-wrap").addClass(function() { return "put-section-"+i; }).find('.section').eq(i).find('.title').addClass('active');
+		};
+		
+		/*右侧按钮点击*/
+		$btn.each(function(index) {
+			$(this).click(function(){
+				i=index;
+				run();
+			})
+		});
+		
+		/*翻页按钮点击*/
+		$arrow.one('click',go);
+		function go(){
+			up();run();	
+			setTimeout(function(){$arrow.one('click',go)},1000)
+		};
+		
+		/*响应鼠标*/
+		$wrap.one('mousewheel',mouse_);
+		function mouse_(event){
+			if(event.deltaY<0) {up()}
+			else{down()}
+			run();
+			setTimeout(function(){$wrap.one('mousewheel',mouse_)},1000)
+		};
+		
+		/*响应键盘上下键*/
+		$(document).one('keydown',k);
+		function k(event){
+			var e=event||window.event;
+			var key=e.keyCode||e.which||e.charCode;
+			switch(key)	{
+				case 38: down();run();	
+				break;
+				case 40: up();run();	
+				break;
+			};
+			setTimeout(function(){$(document).one('keydown',k)},1000);
+		}
+	});
+</script>
+	<!--獎金滾動-->
+<script type="text/javascript">marqueeStart(2, "up");</script>
+</body>
+</html>
