@@ -92,29 +92,37 @@ body,html{overflow:hidden;width:100%;height:100%}
 .section-1 .bg1{
     background: url(../images/in_ph01.jpg?0420) no-repeat center top;
     width: 100%;
-    height: 248px;
+    height: calc(100% / 4);
+    -webkit-background-size:cover;
+    background-size:cover;
 }
 .section-1 .bg2{
     background: url(../images/in_ph02.jpg?0420) no-repeat center top;
     width: 100%;
-    height: 247px;
+    height: calc(100% / 4);
+    -webkit-background-size:cover;
+    background-size:cover;
 
 }
 .section-1 .bg3{
     background: url(../images/in_ph03.jpg?0420) no-repeat center top;
     width: 100%;
-    height: 248px;
+    height: calc(100% / 4);
+    -webkit-background-size:cover;
+    background-size:cover;
 
 }
 .section-1 .bg4{
     background: url(../images/in_ph04.jpg?0420) no-repeat center top;
     width: 100%;
-    height: 248px;
+    height: calc(100% / 4);
+    -webkit-background-size:cover;
+    background-size:cover;
 
 }
 
 .mg-top{
-    margin-top: 15%;
+    margin-top: 12%;
 }
 
 .section-2 .title,.section-3 .title ,.section-4 .title {padding: 80px 0 20px;}
